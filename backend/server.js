@@ -198,8 +198,8 @@ function extractCoinsFromHoldings(holdingsStr) {
 
 // ── Start server ──────────────────────────────────────────────────────────────
 app.listen(PORT, () => {
-  console.log(`\n🚀 Findash Backend running on http://localhost:${PORT}`);
-  console.log(`   GROQ_API_KEY: ${process.env.GROQ_API_KEY ? "✅ Set" : "❌ Missing — set in .env"}`);
-  console.log(`   CRYPTOPANIC:  ${process.env.CRYPTOPANIC_API_KEY ? "✅ Set" : "⚠️  Not set — news will be skipped"}`);
+  console.log(`\n Findash Backend running on http://localhost:${PORT}`);
+  console.log(`   GROQ_API_KEY: ${process.env.GROQ_API_KEY ? " Set" : " Missing — set in .env"}`);
+  console.log(`   CRYPTOPANIC:  ${process.env.CRYPTOPANIC_API_KEY ? " Set" : " Not set — news will be skipped"}`);
   console.log(`   Frontend URL: ${process.env.FRONTEND_URL || "http://localhost:5173"}\n`);
 });

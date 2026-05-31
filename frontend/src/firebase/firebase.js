@@ -6,13 +6,13 @@ import { getAuth } from 'firebase/auth';
 import { getStorage } from 'firebase/storage';
 
 const firebaseConfig = {
- apiKey: "AIzaSyCIcn63UTuIUQaByjBjUWkY8ZqgBDUSoxQ",
-  authDomain: "findash-f1deb.firebaseapp.com",
-  projectId: "findash-f1deb",
-  storageBucket: "findash-f1deb.firebasestorage.app",
-  messagingSenderId: "756455224203",
-  appId: "1:756455224203:web:a439467098bc566253f58e",
-  measurementId: "G-Y1KG1GVB43"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
+  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID,
 };
 
 // Initialize Firebase
